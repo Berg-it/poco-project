@@ -1,6 +1,10 @@
 ![archi](/tiktak.jpg)
-S3"poco-for-csv" --> trigger lambda function"read_CSV_files"
 
-curl -X GET -H "x-api-key: 6E3Plsd7nO1DWtwbNGKK88FknIQMvjEY4u7sqzKn"  -H "Content-Type: application/json" -d '{"key":"val"}'  https://42esqh701k.execute-api.eu-west-3.amazonaws.com/test/upload
 
-terraform apply -var-file="terraform.tfvars"
+**you must add file named:** _ _terraform.tfvars_ _ **that contain your aws credential**
+
+> terraform apply -var-file="terraform.tfvars"
+
+**When your stack is created, you can try it by the bellow command:**
+
+> curl -X GET -H "x-api-key: **YOUR-GENERATED-API-KEY**"  -H "Content-Type: application/json" -d '{"key":"val"}'  https://42esqh701k.execute-api.eu-west-3.amazonaws.com/test/upload
